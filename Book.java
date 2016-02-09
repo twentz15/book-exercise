@@ -38,7 +38,7 @@ class Book
     {
         return pages;
     }
-    
+   
     public void printAuthor()
     {
         System.out.println("The author of the book is " + author);
@@ -49,6 +49,10 @@ class Book
         System.out.println("The title of the book is " + title);
     }
     
+    public void printDetails()
+    {
+        System.out.println("Author: " + author + " Title: " + title + " # of Pages: " + pages);
+    }
     
     
 

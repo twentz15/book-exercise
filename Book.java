@@ -49,7 +49,14 @@ class Book
     
     public void setRef(String refNumber)
     {
-        ref = refNumber;
+        if(ref.length() <= 3)
+        {
+           System.out.println("Sorry cannot use that Reference Number.");
+        }
+        else
+        {
+            ref = refNumber;
+        }
     }
     
     public void printAuthor()

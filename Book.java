@@ -32,6 +32,17 @@ class Book
         return title;
     }
     
+    public void printAuthor()
+    {
+        System.out.println("The author of the book is " + author);
+    }
+    
+    public void printTitle()
+    {
+        System.out.println("The title of the book is " + title);
+    }
+    
+    
     
 
     // Add the methods here ...

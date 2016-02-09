@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String ref = "";
+    int refLength = ref.length();
 
     /**
      * Set the author and title fields when this object
@@ -63,7 +64,14 @@ class Book
     
     public void printDetails()
     {
-        System.out.println("Author: " + author + " Title: " + title + " # of Pages: " + pages);
+        if(ref.length() <= 0)
+        {
+            System.out.println("Author: " + author + " Title: " + title + " # of Pages: " + pages + " RefNumber: ZZZ");
+        }
+        else
+        {
+            System.out.println("Author: " + author + " Title: " + title + " # of Pages: " + pages + " RefNumber: " + ref);
+        }
     }
     
     
